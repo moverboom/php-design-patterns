@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory;
+namespace Creational\AbstractFactory;
 
 abstract class Room extends MapSite
 {

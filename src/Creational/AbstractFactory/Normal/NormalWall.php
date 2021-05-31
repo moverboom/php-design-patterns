@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory\Normal;
+namespace Creational\AbstractFactory\Normal;
 
-use Patterns\Creational\AbstractFactory\Wall;
+use Creational\AbstractFactory\Wall;
 
 final class NormalWall extends Wall
 {

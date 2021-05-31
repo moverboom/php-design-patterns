@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory\Enchanted;
+namespace Creational\AbstractFactory\Enchanted;
 
-use Patterns\Creational\AbstractFactory\Wall;
+use Creational\AbstractFactory\Wall;
 
 final class EnchantedWall extends Wall
 {

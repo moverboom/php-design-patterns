@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Creational\Builder;
 
-use Patterns\Creational\Builder\HtmlPageBuilder;
-use Patterns\Creational\Builder\PageDirector;
-use Patterns\Creational\Builder\PlainTextPageBuilder;
+use Creational\Builder\HtmlPageBuilder;
+use Creational\Builder\PageDirector;
+use Creational\Builder\PlainTextPageBuilder;
 use PHPUnit\Framework\TestCase;
 
 final class PageBuilderTest extends TestCase

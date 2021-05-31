@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory;
+namespace Creational\AbstractFactory;
 
 /**
  * This would be the 'Client'. The class the uses and calls the abstract factory, and only knows about

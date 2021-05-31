@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\Builder;
+namespace Creational\Builder;
 
 abstract class PageBuilder
 {

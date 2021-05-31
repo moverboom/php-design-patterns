@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Creational\AbstractFactory;
 
-use Patterns\Creational\AbstractFactory\Enchanted\EnchantedMazeFactory;
-use Patterns\Creational\AbstractFactory\Enchanted\EnchantedRoom;
-use Patterns\Creational\AbstractFactory\MazeGame;
-use Patterns\Creational\AbstractFactory\Normal\NormalMazeFactory;
-use Patterns\Creational\AbstractFactory\Normal\NormalRoom;
+use Creational\AbstractFactory\Enchanted\EnchantedMazeFactory;
+use Creational\AbstractFactory\Enchanted\EnchantedRoom;
+use Creational\AbstractFactory\MazeGame;
+use Creational\AbstractFactory\Normal\NormalMazeFactory;
+use Creational\AbstractFactory\Normal\NormalRoom;
 use PHPUnit\Framework\TestCase;
 
 final class MazeGameTest extends TestCase

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory\Normal;
+namespace Creational\AbstractFactory\Normal;
 
-use Patterns\Creational\AbstractFactory\Door;
-use Patterns\Creational\AbstractFactory\Maze;
-use Patterns\Creational\AbstractFactory\Room;
-use Patterns\Creational\AbstractFactory\Wall;
-use Patterns\Creational\AbstractFactory\MazeFactory;
+use Creational\AbstractFactory\Door;
+use Creational\AbstractFactory\Maze;
+use Creational\AbstractFactory\Room;
+use Creational\AbstractFactory\Wall;
+use Creational\AbstractFactory\MazeFactory;
 
 final class NormalMazeFactory extends MazeFactory
 {

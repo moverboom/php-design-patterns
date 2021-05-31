@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\FactoryMethod;
+namespace Creational\FactoryMethod;
 
 class TextWriter
 {

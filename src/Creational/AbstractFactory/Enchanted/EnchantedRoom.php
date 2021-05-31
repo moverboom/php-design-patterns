@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Patterns\Creational\AbstractFactory\Enchanted;
+namespace Creational\AbstractFactory\Enchanted;
 
-use Patterns\Creational\AbstractFactory\Direction;
-use Patterns\Creational\AbstractFactory\MapSite;
-use Patterns\Creational\AbstractFactory\Room;
+use Creational\AbstractFactory\Direction;
+use Creational\AbstractFactory\MapSite;
+use Creational\AbstractFactory\Room;
 
 final class EnchantedRoom extends Room
 {

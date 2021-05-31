@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Creational\FactoryMethod;
 
-use Patterns\Creational\FactoryMethod\CSVWriter;
-use Patterns\Creational\FactoryMethod\TextWriter;
+use Creational\FactoryMethod\CSVWriter;
+use Creational\FactoryMethod\TextWriter;
 use PHPUnit\Framework\TestCase;
 
 final class TextWriterTest extends TestCase
