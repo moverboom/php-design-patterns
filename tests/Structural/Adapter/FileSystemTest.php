@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Structural;
+namespace Tests\Structural\Adapter;
 
 use PHPUnit\Framework\TestCase;
 use Structural\Adapter\DownloadableFile;
