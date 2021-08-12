@@ -8,7 +8,7 @@ use Generator;
 
 final class FileSystem
 {
-    public function __construct(private Directory $base)
+    public function __construct(private Resource $base)
     {
     }
 
