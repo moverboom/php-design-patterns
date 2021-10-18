@@ -4,8 +4,7 @@ to interpret sentences in a language.
 If a problem occurs often enough, it might be worthwhile to express the instances of
 the problem as sentences in a simple language that the interpreter can process.
 Regular expression are an example of this.
-However, regular expression or other sophisticated expression languages are
-mostly fist parsed with a parser or compiler which build the abstract syntax tree.
+However, regular expressions are mostly fist parsed with a parser or compiler which build the abstract syntax tree.
 The interpreter pattern doesn't include this part.
 
 The biggest difference between Composite (Structural) and Interpreter (Behavioral)
