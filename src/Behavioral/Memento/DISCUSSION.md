@@ -16,5 +16,5 @@ One for the very limit (narrow) for the care taker and a mode elaborate one (wid
 it can request the state stored in the memento.
 Depending on how the mementos are used, they can store incremental state changes (+50 dollars) or the actual state
 at the time they were created (1000 dollars).
-In my implementation I chose to let a decorated Editor handle storing the mementos to also have uniform
-way doing that.
+In my implementation I chose to let the care takes be a wrapper around Editor.
+This keeps al mementos in one place.
