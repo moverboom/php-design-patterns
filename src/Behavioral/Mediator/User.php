@@ -8,7 +8,7 @@ final class User
 {
     private ChatRoom $chatRoom;
 
-    /** @var string[] */
+    /** @var Message[] */
     private array $receivedMessages = [];
 
     public function __construct(private string $name)

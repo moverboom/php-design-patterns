@@ -6,6 +6,9 @@ namespace Behavioral\Iterator;
 
 use Iterator;
 
+/**
+ * @implements Iterator<int>
+ */
 final class ReverseIterator implements Iterator
 {
     private int $position;
@@ -15,27 +18,27 @@ final class ReverseIterator implements Iterator
         $this->position = $this->collection->length() - 1;
     }
 
-    public function current()
+    public function current(): string
     {
         return $this->collection->item($this->position);
     }
 
-    public function next()
+    public function next(): void
     {
         $this->position--;
     }
 
-    public function key()
+    public function key(): int
     {
         return $this->position;
     }
 
-    public function valid()
+    public function valid(): bool
     {
         return $this->collection->hasItem($this->position);
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->position = $this->collection->length() - 1;
     }

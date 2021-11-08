@@ -10,7 +10,7 @@ final class StartEngine implements Command
     {
     }
 
-    public function execute()
+    public function execute(): void
     {
         $this->engine->start();
     }

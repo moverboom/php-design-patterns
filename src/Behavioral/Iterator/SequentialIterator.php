@@ -6,6 +6,9 @@ namespace Behavioral\Iterator;
 
 use Iterator;
 
+/**
+ * @implements Iterator<int>
+ */
 final class SequentialIterator implements Iterator
 {
     private int $position = 0;
@@ -14,27 +17,27 @@ final class SequentialIterator implements Iterator
     {
     }
 
-    public function current()
+    public function current(): string
     {
         return $this->collection->item($this->position);
     }
 
-    public function next()
+    public function next(): void
     {
         $this->position++;
     }
 
-    public function key()
+    public function key(): int
     {
         return $this->position;
     }
 
-    public function valid()
+    public function valid(): bool
     {
         return $this->collection->hasItem($this->position);
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->position = 0;
     }

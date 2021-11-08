@@ -10,7 +10,7 @@ final class StopEngine implements Command
     {
     }
 
-    public function execute()
+    public function execute(): void
     {
         $this->engine->stop();
     }

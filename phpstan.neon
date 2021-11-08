@@ -1,0 +1,8 @@
+parameters:
+  bootstrapFiles:
+  - src/main.php
+  paths:
+  - src
+  - tests
+  level: 8
+  tmpDir: var/cache/phpstan

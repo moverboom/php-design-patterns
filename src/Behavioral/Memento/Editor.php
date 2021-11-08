@@ -23,8 +23,9 @@ final class Editor
         return $this->snapshot();
     }
 
-    private function snapshot()
+    private function snapshot(): EditorSnapshot
     {
+        //Don't expose functions to fetch the state to other classes than the originator.
         return new class($this->content) implements EditorSnapshot {
             public function __construct(private string $content)
             {}

@@ -6,6 +6,9 @@ namespace Behavioral\Iterator;
 
 use IteratorAggregate;
 
+/**
+ * @implements IteratorAggregate<string>
+ */
 class Collection implements IteratorAggregate
 {
     /**
@@ -50,7 +53,7 @@ class Collection implements IteratorAggregate
      *
      * @return SequentialIterator
      */
-    public function getIterator()
+    public function getIterator(): SequentialIterator
     {
         return new SequentialIterator($this);
     }
