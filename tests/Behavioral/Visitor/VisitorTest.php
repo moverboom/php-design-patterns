@@ -11,18 +11,21 @@ final class VisitorTest extends TestCase
     /** @test */
     public function it_visits(): void
     {
-        $visitor = new RecordingVisitor();
-        $user = new User();
-        $user->accept($visitor);
-        $group = new Group();
-        $group->accept($visitor);
+        $visitor = new SickLeaveReport();
+        $student1 = new Student('student1', ['2021-01-01', '2021-02-01']);
+        $student2 = new Student('student2', ['2021-07-01', '2021-08-01']);
+        $university = new University('University1', [$student1, $student2]);
+
+        $report = $university->accept($visitor);
 
         self::assertSame(
             [
-                'Username',
-                'Group name',
+                '2021-01-01',
+                '2021-02-01',
+                '2021-07-01',
+                '2021-08-01',
             ],
-            $visitor->visited()
+            $report
         );
     }
 }

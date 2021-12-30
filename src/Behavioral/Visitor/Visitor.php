@@ -6,7 +6,7 @@ namespace Behavioral\Visitor;
 
 interface Visitor
 {
-    public function visitUser(User $user): void;
+    public function visitStudent(Student $student): array;
 
-    public function visitGroup(Group $group): void;
+    public function visitUniversity(University $university): array;
 }
