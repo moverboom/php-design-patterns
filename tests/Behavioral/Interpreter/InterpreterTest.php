@@ -11,6 +11,9 @@ final class InterpreterTest extends TestCase
     /** @test */
     public function it_interprets_full(): void
     {
+        // $tree = Parser::parse("aa & (AA & BB) & (CC | DD)")
+        // $success = $tree->match(Context::initialize('aaAAbbDD'))
+        
         $tree = new SequenceExpression([
             new LiteralExpression('aa'),
             new SequenceExpression([
