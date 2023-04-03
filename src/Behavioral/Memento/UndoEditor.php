@@ -14,6 +14,7 @@ final class UndoEditor
     public function __construct(private Editor $editor)
     {
     }
+
     public function edit(string $content): void
     {
         $this->snapshots[] = $this->editor->save();
