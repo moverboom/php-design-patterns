@@ -1,8 +1,8 @@
 # Memento
-Without violating encapsulation, capture and externalize an object's
+Without violating encapsulation, capture an externalize an object's
 internal state so that the object can be restored to this state later.
 This pattern is also known as Token.
-Sometimes you want to be able to restore and object to its previous state to, for example,
+Sometimes you want to be able to restore an object to its previous state to, for example,
 allow users to undo operations or recover the previous state in case of an exception.
 The problem here is trying not to violate encapsulation, which would happen is the state is exposed.
 The pattern consists of two parts: the _memento_ object and the _originator_.
@@ -16,5 +16,5 @@ One for the very limit (narrow) for the care taker and a mode elaborate one (wid
 it can request the state stored in the memento.
 Depending on how the mementos are used, they can store incremental state changes (+50 dollars) or the actual state
 at the time they were created (1000 dollars).
-In my implementation I chose to let the care takes be a wrapper around Editor.
+In my implementation I chose to let the care taker be a wrapper around Editor.
 This keeps al mementos in one place.
